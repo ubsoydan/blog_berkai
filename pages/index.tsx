@@ -30,8 +30,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               Welcome to my Digital Garden – I am a{' '}
               <span className="font-extrabold">Data Scientist</span> by training and{' '}
               <span className="font-extrabold">Full-Stack Developer</span> &{' '}
-              <span className="font-extrabold">Technical Consultant</span> by profession. I am
-              always looking for new challenges. In my free time, I like developing
+              <span className="font-extrabold">Technical Consultant</span> by profession. In my free time, I like developing
               <Link href="/projects" className="text-primary-500 underline underline-offset-4">
                 {' '}
                 <a>side projects</a>
