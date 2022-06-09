@@ -14,7 +14,7 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   return (
-<>
+    <>
       <header className="sticky top-0 left-0 right-0 z-[110] border-b border-gray-200 bg-opacity-30 py-4 backdrop-blur-lg backdrop-filter dark:border-gray-700">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-4 sm:px-6 xl:max-w-5xl xl:px-0">
           <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -48,14 +48,12 @@ const LayoutWrapper = ({ children }: Props) => {
           </div>
         </div>
       </header>
-    <SectionContainer>
-
+      <SectionContainer>
         <main className="mb-auto">{children}</main>
 
         <Footer />
-    </SectionContainer>
-</>
-
+      </SectionContainer>
+    </>
   )
 }
 
