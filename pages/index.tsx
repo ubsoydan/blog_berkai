@@ -26,7 +26,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-snug">
               Hi, I'm Reuben 👋🏻
             </h1>
-            <p className="pr-6 text-lg leading-7 text-gray-500 dark:text-gray-400">
+            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 sm:pr-6">
               Welcome to my Digital Garden – I am a{' '}
               <span className="font-extrabold">Data Scientist</span> by training and{' '}
               <span className="font-extrabold">Full-Stack Developer</span> &{' '}
