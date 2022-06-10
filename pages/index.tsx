@@ -21,10 +21,10 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className=" divide-gray-200 dark:divide-gray-700">
-        <div className="grid grid-cols-1 space-y-5 py-24 xl:grid-cols-5">
-          <div className="col-span-3 justify-center space-y-2 align-middle">
+        <div className="grid grid-cols-1 space-y-10 py-10 sm:space-y-5 sm:py-24 xl:grid-cols-5">
+          <div className="col-span-3 justify-center space-y-5 align-middle sm:space-y-2">
             <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-snug">
-              Hi, I'm Reuben
+              Hi, I'm Reuben 👋🏻
             </h1>
             <p className="pr-6 text-lg leading-7 text-gray-500 dark:text-gray-400">
               Welcome to my Digital Garden – I am a{' '}
@@ -45,7 +45,14 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </div>
           {siteMetadata.newsletter.provider !== '' && (
             <div className="col-span-2 flex xl:items-center xl:justify-center xl:pl-6">
-              <NewsletterForm />
+              <iframe
+                title="newsletter"
+                src="https://seekingwithin.substack.com/embed"
+                width="480"
+                height="320"
+                className="border-2 border-primary-500 bg-white"
+                scrolling="no"
+              ></iframe>
             </div>
           )}
         </div>
