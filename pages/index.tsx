@@ -45,14 +45,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </div>
           {siteMetadata.newsletter.provider !== '' && (
             <div className="col-span-2 flex xl:items-center xl:justify-center xl:pl-6">
-              <iframe
-                title="newsletter"
-                src="https://seekingwithin.substack.com/embed"
-                width="480"
-                height="320"
-                className="border-2 border-primary-500 bg-white"
-                scrolling="no"
-              ></iframe>
+              <NewsletterForm />
             </div>
           )}
         </div>
