@@ -23,7 +23,7 @@ export default function Tags({ tags }: InferGetStaticPropsType<typeof getStaticP
             Tags
           </h1>
         </div>
-        <div className="flex max-w-lg flex-wrap">
+        <div className="flex max-w-lg flex-wrap py-8">
           {Object.keys(tags).length === 0 && 'No tags found.'}
           {sortedTags.map((t) => {
             return (
