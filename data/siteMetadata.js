@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Reuben Rapose',
   headerTitle: 'Reuben Rapose',
   description:
-    'Reuben is a Data Scientist by training and a Full-Stack Developer & Technical Consultant by profession. While pursuing his obsession with technology, he discovered a passion for building tech that makes a difference – Today, Reuben works as an independent Technical Consultant, get in touch. ✌︎',
+    'Reuben is a Data Scientist / Full-Stack Developer by training and Technical Consultant by profession. While pursuing his obsession with technology, he discovered a passion for building tech that makes a difference – Today, Reuben works as an independent Technical Consultant, get in touch. ✌︎',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://reubence.com',
