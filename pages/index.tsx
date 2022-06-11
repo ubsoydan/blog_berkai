@@ -29,7 +29,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 sm:pr-6">
               Welcome to my Digital Garden – I am a{' '}
               <span className="font-extrabold">Data Scientist</span> by training and{' '}
-              <span className="font-extrabold">Full-Stack Developer</span>by profession. In my free
+              <span className="font-extrabold">Full-Stack Developer</span> by profession. In my free
               time, I like developing{' '}
               <Link href="/projects" className="text-primary-500 underline underline-offset-4">
                 <a>side projects</a>
