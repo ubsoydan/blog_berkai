@@ -24,7 +24,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <div className="grid grid-cols-1 space-y-10 py-10 sm:space-y-5 sm:py-24 xl:grid-cols-5">
           <div className="col-span-3 justify-center space-y-5 align-middle sm:space-y-2">
             <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-snug">
-              Hi, I'm Reuben 👋🏻
+              Hi, I'm Reuben <span className="waving-hand">👋🏻</span>
             </h1>
             <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 sm:pr-6">
               Welcome to my Digital Garden – I am a{' '}
