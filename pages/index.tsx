@@ -9,9 +9,6 @@ import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 5
-const config = {
-  unstable_runtimeJS: false,
-}
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
   const posts = await getAllFilesFrontMatter('blog')
