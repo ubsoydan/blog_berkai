@@ -35,8 +35,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                 <a>side projects</a>
               </Link>{' '}
               and{' '}
-              <Link href="/blog">
-                <a className="text-primary-500 underline underline-offset-4">blogging</a>
+              <Link href="/blog" className="text-primary-500 underline underline-offset-4">
+                <a>blogging</a>
               </Link>{' '}
               about my journey as an Entrepreneur. Have a good read!
             </p>
