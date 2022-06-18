@@ -35,8 +35,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               </span>
             </span>{' '}
             <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-snug">
-              Reuben{' '}
-              <span className="relative mx-1 hidden before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:inline-block">
+              Reuben
+              <span className="relative mx-3 hidden before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:inline-block">
                 <span className="relative skew-y-3 text-primary-500">
                   <Link
                     href="https://twitter.com/reubence_"
@@ -46,7 +46,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   </Link>
                 </span>
               </span>
-              <span className="relative inset-y-6 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
+              <span className="relative inset-y-6 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
                 ^
               </span>
               Rapose
@@ -57,22 +57,25 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               time, I like developing{' '}
               <Link
                 href="/projects"
-                className="text-black underline underline-offset-4  hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500"
+                className="text-black underline decoration-primary-500 underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500"
               >
                 <a>side projects</a>
               </Link>{' '}
               and{' '}
               <Link href="/blog">
-                <a className="text-black underline underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500">
+                <a className="text-black underline decoration-primary-500 underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500">
                   blogging
                 </a>
               </Link>{' '}
               about my journey as an Entrepreneur. Have a good read!{' '}
               <span className="waving-hand text-2xl">👋🏻</span>
             </p>
-            <p className="min-w-min text-lg leading-7 text-gray-500 underline underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500 sm:pr-6 sm:text-xl">
-              <Link href="/about">
-                <a>More on About Page.</a>
+            <p className="text-lg leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-xl">
+              <Link
+                href="/about"
+                className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
+              >
+                <a>More on About Page</a>
               </Link>
             </p>
           </div>
@@ -83,7 +86,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           )}
         </div>
 
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul className="mt-10 divide-y divide-gray-200 dark:divide-gray-700">
           <h1 className="pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-snug">
             Latest{' '}
           </h1>

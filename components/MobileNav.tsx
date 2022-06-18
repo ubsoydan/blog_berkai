@@ -48,8 +48,8 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-[72px] right-0 z-10 h-[1000px] w-full transform bg-gray-300 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
-          navShow ? 'translate-x-0' : 'hidden translate-x-full'
+        className={`fixed top-[72px] right-0 !z-10 h-[1000px] w-full transform bg-white duration-500 ease-in-out dark:bg-gray-900 ${
+          navShow ? 'translate-y-0' : '-inset-full -translate-y-full '
         }`}
       >
         <button
@@ -58,12 +58,12 @@ const MobileNav = () => {
           className="fixed h-full w-full cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed mt-8 h-full">
+        <nav className="fixed mt-8 h-full w-full px-6">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
+            <div key={link.title} className="border-b border-gray-300 py-6 dark:border-gray-500">
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                className="text-2xl tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.title}
