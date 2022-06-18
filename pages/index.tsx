@@ -45,9 +45,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     @reubence
                   </Link>
                 </span>
-              </span>
-              <span className="relative inset-y-4 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
-                {' '}
+              </span>{' '}
+              <span className="relative inset-y-6 ml-1 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
                 ^
               </span>{' '}
               Rapose
@@ -64,9 +63,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                 <a className="text-primary-500 underline underline-offset-4">blogging</a>
               </Link>{' '}
               about my journey as an Entrepreneur. Have a good read!{' '}
-              <span className="waving-hand">👋🏻</span>
+              <span className="waving-hand text-2xl">👋🏻</span>
             </p>
-            <p className="min-w-min text-lg leading-7 text-gray-500 hover:cursor-pointer hover:text-primary-500 hover:underline hover:underline-offset-4 dark:text-gray-500 hover:dark:text-primary-500 sm:pr-6 sm:text-xl">
+            <p className="min-w-min text-lg leading-7 text-gray-500 underline underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500 sm:pr-6 sm:text-xl">
               <Link href="/about">
                 <a>More on About Page.</a>
               </Link>
