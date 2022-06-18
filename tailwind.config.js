@@ -29,6 +29,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
+        //@ts-ignore
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -39,37 +40,37 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.black'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
+                color: `${theme('colors.primary.300')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.300') },
             },
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.black'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.black'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.900'),
+              color: theme('colors.black'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              color: theme('colors.black'),
             },
             pre: {
               backgroundColor: theme('colors.gray.800'),
             },
             code: {
               color: theme('colors.pink.500'),
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.white'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -83,7 +84,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.gray.100'),
+              backgroundColor: theme('colors.white'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -100,37 +101,37 @@ module.exports = {
             },
             strong: { color: theme('colors.gray.600') },
             blockquote: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.black'),
               borderLeftColor: theme('colors.gray.200'),
             },
           },
         },
         dark: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.white'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')} !important`,
+                color: `${theme('colors.primary.300')} !important`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.300') },
             },
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
             },
             pre: {
               backgroundColor: theme('colors.gray.800'),
@@ -149,10 +150,10 @@ module.exports = {
             'ul li::marker': {
               backgroundColor: theme('colors.gray.400'),
             },
-            strong: { color: theme('colors.gray.100') },
+            strong: { color: theme('colors.white') },
             thead: {
               th: {
-                color: theme('colors.gray.100'),
+                color: theme('colors.white'),
               },
             },
             tbody: {
@@ -161,7 +162,7 @@ module.exports = {
               },
             },
             blockquote: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.white'),
               borderLeftColor: theme('colors.gray.700'),
             },
           },
