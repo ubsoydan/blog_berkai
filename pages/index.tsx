@@ -7,6 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
+import Image from 'next/image'
 
 const MAX_DISPLAY = 5
 
@@ -21,11 +22,21 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className=" divide-gray-200 dark:divide-gray-700">
-        <div className="grid grid-cols-1 space-y-10 py-10 sm:space-y-5 sm:py-24 xl:grid-cols-5">
+        <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-24 xl:grid-cols-5">
           <div className="col-span-3 justify-center space-y-5 align-middle sm:space-y-2">
+            <span className="relative inset-y-4 ml-16 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:hidden">
+              <span className="relative inline-block -rotate-3 text-primary-500">
+                <Link
+                  href="https://twitter.com/reubence_"
+                  className=" font-bold text-primary-500 transition hover:underline hover:underline-offset-8"
+                >
+                  @reubence
+                </Link>
+              </span>
+            </span>{' '}
             <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-snug">
               Reuben{' '}
-              <span className="relative mx-1 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20">
+              <span className="relative mx-1 hidden before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:inline-block">
                 <span className="relative skew-y-3 text-primary-500">
                   <Link
                     href="https://twitter.com/reubence_"
@@ -34,6 +45,10 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     @reubence
                   </Link>
                 </span>
+              </span>
+              <span className="relative inset-y-4 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
+                {' '}
+                ^
               </span>{' '}
               Rapose
             </h1>

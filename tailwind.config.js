@@ -31,6 +31,7 @@ module.exports = {
       fontFamily: {
         //@ts-ignore
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        arrow: ['Cedarville Cursive', 'cursive'],
       },
       colors: {
         primary: colors.teal,
