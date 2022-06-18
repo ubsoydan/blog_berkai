@@ -45,10 +45,10 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     @reubence
                   </Link>
                 </span>
-              </span>{' '}
-              <span className="relative inset-y-6 ml-1 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
+              </span>
+              <span className="relative inset-y-6 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
                 ^
-              </span>{' '}
+              </span>
               Rapose
             </h1>
             <p className="text-lg leading-7 text-black dark:text-white sm:pr-6 sm:text-xl">
