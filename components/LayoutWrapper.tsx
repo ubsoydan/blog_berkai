@@ -22,13 +22,13 @@ const LayoutWrapper = ({ children }: Props) => {
               <div className="mr-3 dark:invert">
                 <Logo />
               </div>
-              {typeof siteMetadata.headerTitle === 'string' ? (
+              {/* {typeof siteMetadata.headerTitle === 'string' ? (
                 <div className="mb-1 hidden h-6 text-2xl font-semibold sm:block">
                   {siteMetadata.headerTitle}
                 </div>
               ) : (
                 siteMetadata.headerTitle
-              )}
+              )} */}
             </div>
           </Link>
           <div className="flex items-center text-base leading-5">
