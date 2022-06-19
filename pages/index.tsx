@@ -28,13 +28,13 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               <span className="relative inline-block -rotate-6 text-primary-500">
                 <Link
                   href="https://twitter.com/reubence_"
-                  className="text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8"
+                  className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8"
                 >
                   @reubence
                 </Link>
               </span>
             </span>{' '}
-            <h1 className="text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-snug">
+            <h1 className="text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-[46px] md:leading-snug">
               Reuben
               <span className="relative mx-3 hidden before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:inline-block">
                 <span className="relative skew-y-3 text-primary-500">

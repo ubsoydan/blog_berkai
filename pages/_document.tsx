@@ -26,6 +26,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />

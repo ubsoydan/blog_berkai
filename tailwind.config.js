@@ -32,6 +32,7 @@ module.exports = {
         //@ts-ignore
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
         arrow: ['Cedarville Cursive', 'cursive'],
+        arrow2: ['Montserrat Alternates', 'sans-serif'],
       },
       colors: {
         primary: colors.teal,
