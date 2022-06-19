@@ -22,39 +22,31 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className=" divide-gray-200 dark:divide-gray-700">
-        <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-24 xl:grid-cols-5">
+        <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-14 xl:grid-cols-5">
           <div className="col-span-3 justify-center space-y-5 align-middle">
-            <span className="relative inset-y-4 ml-20 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:bg-primary-500 before:bg-opacity-20 sm:hidden">
+            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-40">
               <span className="relative inline-block -rotate-6 text-primary-500">
                 <Link
                   href="https://twitter.com/reubence_"
-                  className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8"
+                  className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8 sm:text-xl"
                 >
                   @reubence
                 </Link>
               </span>
-            </span>{' '}
-            <h1 className="text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-[46px] md:leading-snug">
+            </span>
+            <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
               Reuben
-              <span className="relative mx-3 hidden before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-primary-500 before:bg-opacity-20 sm:inline-block">
-                <span className="relative skew-y-3 text-primary-500">
-                  <Link
-                    href="https://twitter.com/reubence_"
-                    className="text-primary-500 transition hover:underline hover:underline-offset-8"
-                  >
-                    @reubence
-                  </Link>
-                </span>
-              </span>
-              <span className="relative inset-y-6 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:hidden">
+              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-12">
                 ^
               </span>
               Rapose
             </h1>
-            <p className="text-lg leading-7 text-black dark:text-white sm:pr-6 sm:text-xl">
+            <p className="text-lg text-black dark:text-white sm:pr-6 sm:text-xl sm:leading-8">
               Welcome to my Digital Garden – I am a <span className="">Data Scientist</span> by
-              training and <span className="">Full-Stack Developer</span> by profession. In my free
-              time, I like developing{' '}
+              training and <span className="">Full-Stack Developer</span> by profession who loves to
+              build things for the web & mobile. Also sometimes for the toaster.{' '}
+              {/* In my
+              free time, I like developing{' '}
               <Link
                 href="/projects"
                 className="text-black underline decoration-primary-500 underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500"
@@ -67,15 +59,15 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   blogging
                 </a>
               </Link>{' '}
-              about my journey as an Entrepreneur. Have a good read!{' '}
-              <span className="waving-hand text-2xl">👋🏻</span>
+              about my journey as an Entrepreneur. */}
+              Have a good read! <span className="waving-hand text-2xl">👋🏻</span>
             </p>
             <p className="text-lg leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-xl">
               <Link
                 href="/about"
                 className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
               >
-                <a>More on About Page</a>
+                <a>Read the rest of my bio</a>
               </Link>
             </p>
           </div>
