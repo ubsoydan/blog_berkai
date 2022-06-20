@@ -17,13 +17,13 @@ interface Props {
 }
 
 export default function PostLayout({ frontMatter, next, prev, children }: Props) {
-  const { slug, date, title } = frontMatter
+  const { slug, date, title, summary } = frontMatter
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} {...frontMatter} />
+      <BlogSEO url={`${siteMetadata.siteUrl}/snippets/${slug}`} {...frontMatter} />
       <ScrollTopAndComment />
-      <article>
+      <article className="py-12">
         <div>
           <header>
             <div className="space-y-1 border-b border-gray-200 pb-10 text-center dark:border-gray-700">
@@ -38,8 +38,10 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              <div className="text-lg text-gray-400 sm:text-xl">{summary}</div>
             </div>
           </header>
+
           <div
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0 "
             style={{ gridTemplateRows: 'auto 1fr' }}
@@ -49,13 +51,13 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                 {children}
               </div>
             </div>
-            <Comments frontMatter={frontMatter} />
+            {/* <Comments frontMatter={frontMatter} /> */}
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (
                   <div className="pt-4 xl:pt-8">
                     <Link
-                      href={`/blog/${prev.slug}`}
+                      href={`/snippets/${prev.slug}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     >
                       &larr; {prev.title}
@@ -65,7 +67,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                 {next && (
                   <div className="pt-4 xl:pt-8">
                     <Link
-                      href={`/blog/${next.slug}`}
+                      href={`/snippets/${next.slug}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     >
                       {next.title} &rarr;
