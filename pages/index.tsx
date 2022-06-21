@@ -9,7 +9,7 @@ import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
 import Image from 'next/image'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 3
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
   const posts = await getAllFilesFrontMatter('blog')
@@ -78,20 +78,20 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           )}
         </div>
 
-        <ul className="mt-10 divide-y divide-gray-200 dark:divide-gray-700">
-          <h1 className="pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-snug">
-            Latest{' '}
+        <ul className="mt-16 border-t border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+          <h1 className="my-4  pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
+            Recent Posts{' '}
           </h1>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-12">
-                <article>
+              <Link href={`/blog/${slug}`} key={slug}>
+                <article className="group rounded-lg py-12 px-4 transition duration-200 hover:bg-gray-400 hover:bg-opacity-20">
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl className="">
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-lg font-medium leading-6 text-gray-500 dark:text-gray-400 sm:text-xl">
+                      <dd className="text-lg font-medium leading-6 text-gray-500 group-hover:text-primary-500 dark:text-gray-400 sm:text-xl">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
                     </dl>
@@ -112,14 +112,14 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                             ))}
                           </div>
                         </div>
-                        <div className="prose prose-lg max-w-none text-gray-500 dark:text-gray-400 sm:prose-xl">
+                        <div className="prose prose-base max-w-none text-gray-500 dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          className="text-primary-500 group-hover:text-primary-600 dark:group-hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
                           Read more &rarr;
@@ -128,7 +128,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     </div>
                   </div>
                 </article>
-              </li>
+              </Link>
             )
           })}
         </ul>
