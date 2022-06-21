@@ -58,15 +58,15 @@ export default function SnippetsLayout({
             </svg>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-8 divide-y divide-gray-200 py-12 dark:divide-gray-700 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <a
+              <Link
                 key={slug}
                 href={`/snippets/${slug}`}
-                className="bg-day dark:bg-night group relative flex transform cursor-pointer flex-wrap rounded border border-gray-200 bg-opacity-50 p-px py-px transition duration-500 hover:scale-105 dark:border-gray-700 dark:bg-opacity-50"
+                className="bg-day dark:bg-night group relative z-50 flex transform cursor-pointer flex-wrap rounded border border-gray-200 bg-opacity-50 p-px py-px transition duration-500 hover:scale-105 dark:border-gray-700 dark:bg-opacity-50"
               >
                 <div className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 transform bg-primary-500 duration-300 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 h-full w-1 origin-bottom scale-y-0 transform bg-primary-500 duration-300 group-hover:scale-y-100" />
@@ -83,7 +83,7 @@ export default function SnippetsLayout({
                           {title}
                         </Link>
                       </h2>
-                      <div className="prose prose-lg max-w-none text-gray-500 dark:text-gray-400 sm:prose-xl">
+                      <div className="prose prose-base max-w-none text-gray-500 dark:text-gray-400 sm:prose-lg">
                         {summary}
                       </div>
 
@@ -95,7 +95,7 @@ export default function SnippetsLayout({
                     </div>
                   </article>
                 </div>
-              </a>
+              </Link>
             )
           })}
         </div>
