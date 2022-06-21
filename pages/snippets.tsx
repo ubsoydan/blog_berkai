@@ -1,16 +1,17 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
-import SnippetsLayout from '@/layouts/SnippetsLayout'
+import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { ComponentProps } from 'react'
+import SnippetsLayout from '../layouts/SnippetsLayout'
 
 export const POSTS_PER_PAGE = 5
 
 export const getStaticProps: GetStaticProps<{
-  posts: ComponentProps<typeof SnippetsLayout>['posts']
-  initialDisplayPosts: ComponentProps<typeof SnippetsLayout>['initialDisplayPosts']
-  pagination: ComponentProps<typeof SnippetsLayout>['pagination']
+  posts: ComponentProps<typeof ListLayout>['posts']
+  initialDisplayPosts: ComponentProps<typeof ListLayout>['initialDisplayPosts']
+  pagination: ComponentProps<typeof ListLayout>['pagination']
 }> = async () => {
   const posts = await getAllFilesFrontMatter('snippets')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
@@ -22,7 +23,7 @@ export const getStaticProps: GetStaticProps<{
   return { props: { initialDisplayPosts, posts, pagination } }
 }
 
-export default function SnippetsLandingPage({
+export default function Blog({
   posts,
   initialDisplayPosts,
   pagination,
@@ -34,7 +35,7 @@ export default function SnippetsLandingPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="Snippets"
+        title="All Snippets"
       />
     </>
   )

@@ -15,7 +15,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="mt-10 divide-y divide-gray-600">
+      <div className="mt-10 divide-y divide-gray-600 px-2 sm:px-0">
         {/* <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className=" text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Jack Of All Trades, Master Of One
