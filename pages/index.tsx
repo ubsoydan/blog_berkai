@@ -21,7 +21,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className=" divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
+      <div className="divide divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
         <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-14 xl:grid-cols-5">
           <div className="col-span-3 justify-center space-y-5 align-middle">
             <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-40">
@@ -78,7 +78,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           )}
         </div>
 
-        <ul className="mt-16 border-t border-gray-200 dark:divide-gray-700 dark:border-gray-700">
+        <ul className="mt-16 border-t border-gray-200 dark:border-gray-700">
           <h1 className="my-4  pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
             Recent Posts{' '}
           </h1>
