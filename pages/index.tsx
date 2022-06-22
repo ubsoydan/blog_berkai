@@ -40,14 +40,14 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                 </Link>
               </span>
             </span>
-            <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
+            <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-background-color dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
               Reuben
               <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-14">
                 ^
               </span>
               Rapose
             </h1>
-            <p className="text-lg text-black dark:text-white sm:pr-6 sm:text-xl sm:leading-8">
+            <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
               Welcome to my Digital Garden – I am a <span className="">Data Scientist</span> by
               training and <span className="">Full-Stack Developer</span> by profession who loves to
               build things for the web & mobile. Also sometimes for the toaster.{' '}
@@ -68,7 +68,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               about my journey as an Entrepreneur. */}
               Have a good read! <span className="waving-hand text-2xl">👋🏻</span>
             </p>
-            <p className="text-lg leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-xl">
+            <p className="leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
               <Link
                 href="/about"
                 className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
@@ -105,17 +105,17 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   }
                 ></div>
                 <article className="relative h-full rounded-xl bg-background-color">
-                  <div className="flex h-full flex-col justify-between rounded-xl bg-white p-4 dark:bg-background-color">
+                  <div className="flex h-full flex-col justify-between rounded-xl bg-white p-5 dark:bg-background-color">
                     <div className="flex flex-col justify-between space-y-5 md:flex-row xl:col-span-3">
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-2xl font-semibold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+                          <h2 className="text-xl font-semibold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                             {title}
                           </h2>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-10 flex sm:text-lg">
+                    <div className="mt-10 flex">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -146,18 +146,18 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             )
           })}
         </ul>
+        {posts.length > MAX_DISPLAY && (
+          <div className="mt-6 flex justify-end text-base font-medium leading-6">
+            <Link
+              href="/blog"
+              className="text-background-color hover:text-primary-600 dark:text-white dark:hover:text-primary-400"
+              aria-label="all posts"
+            >
+              All Posts &rarr;
+            </Link>
+          </div>
+        )}
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="mt-6 flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-background-color hover:text-primary-600 dark:text-white dark:hover:text-primary-400"
-            aria-label="all posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
     </>
   )
 }

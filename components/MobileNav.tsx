@@ -48,7 +48,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-[72px] right-0 !z-10 h-[1000px] w-full transform bg-white duration-500 ease-in-out dark:bg-gray-900 ${
+        className={`fixed top-[72px] right-0 !z-10 h-[1000px] w-full transform bg-white duration-500 ease-in-out dark:bg-background-color ${
           navShow ? 'translate-y-0' : '-inset-full -translate-y-full '
         }`}
       >
