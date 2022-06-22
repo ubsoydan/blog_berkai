@@ -34,7 +34,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               <span className="relative inline-block -rotate-6 text-primary-500">
                 <Link
                   href="https://twitter.com/reubence_"
-                  className="font-arrow2 text-sm font-bold text-background-color transition hover:underline hover:underline-offset-8 text-primary-500 sm:text-xl"
+                  className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8 sm:text-xl"
                 >
                   @reubence
                 </Link>
@@ -42,7 +42,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             </span>
             <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
               Reuben
-              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-background-color text-primary-500 sm:inset-y-14">
+              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-14">
                 ^
               </span>
               Rapose
