@@ -4,8 +4,10 @@ import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { ComponentProps } from 'react'
+import SnippetsLayout from '@/layouts/SnippetsLayout'
+import BlogListLayout from '@/layouts/BlogListLayout'
 
-export const POSTS_PER_PAGE = 5
+export const POSTS_PER_PAGE = 10
 
 export const getStaticProps: GetStaticProps<{
   posts: ComponentProps<typeof ListLayout>['posts']
@@ -30,7 +32,7 @@ export default function Blog({
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <ListLayout
+      <BlogListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
