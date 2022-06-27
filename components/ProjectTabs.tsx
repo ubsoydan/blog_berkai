@@ -46,7 +46,7 @@ const features = [
   },
 ]
 
-export default function PrimaryFeatures() {
+export default function ProjectTabs() {
   const [tabOrientation, setTabOrientation] = useState('horizontal')
 
   function onMediaQueryChange({ matches }) {

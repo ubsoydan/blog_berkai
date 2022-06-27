@@ -1,14 +1,14 @@
 ---
-title: React Search
+title: React Context Hook For Search Values
 date: '2022-06-20'
-tags: [javascript, react]
+tags: [JavaScript, React, React Hooks]
 draft: false
-summary: React context hook for search values
+summary: To implement a simple on-page search functionality
 images: []
 layout: PostSimple
 ---
 
-```jsx showLineNumbers
+```jsx {14-25} showLineNumbers
 import React, { useState, useContext, createContext } from 'react'
 
 const searchContext = createContext()

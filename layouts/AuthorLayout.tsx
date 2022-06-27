@@ -3,6 +3,8 @@ import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import Experience from '@/components/Experience'
+import experienceData from '@/data/experienceData'
 
 interface Props {
   children: ReactNode
@@ -15,7 +17,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="mt-10 divide-y divide-gray-600 px-2 sm:px-0">
+      <div className="mt-10 px-2 sm:px-0">
         {/* <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className=" text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Jack Of All Trades, Master Of One
@@ -42,6 +44,28 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
           </div>
           <div className="prose prose-lg max-w-none pt-8 pb-8 dark:prose-dark sm:prose-xl xl:col-span-2">
             {children}
+          </div>
+        </div>
+        <div className="mt-10">
+          <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              Experience
+            </h1>
+          </div>
+          <div className="max-w-none pt-8 pb-8 xl:col-span-2">
+            {experienceData.map((d) => (
+              <Experience
+                key={d.company}
+                title={d.title}
+                company={d.company}
+                location={d.location}
+                range={d.range}
+                url={d.url}
+                text1={d.text1}
+                text2={d.text2}
+                text3={d.text3}
+              />
+            ))}
           </div>
         </div>
       </div>

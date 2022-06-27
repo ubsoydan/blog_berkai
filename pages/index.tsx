@@ -1,13 +1,10 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import NewsletterForm from '@/components/NewsletterForm'
-import Image from 'next/image'
 
 const MAX_DISPLAY = 3
 
@@ -91,7 +88,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
             const { slug, date, title, summary, tags, readTime } = frontMatter
-            console.log(index)
             return (
               <Link
                 href={`/blog/${slug}`}
