@@ -31,6 +31,8 @@ module.exports = {
       fontFamily: {
         //@ts-ignore
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        // sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        // display: ['Lexend', ...defaultTheme.fontFamily.sans],
         arrow: ['Cedarville Cursive', 'cursive'],
         arrow2: ['Montserrat Alternates', 'sans-serif'],
       },

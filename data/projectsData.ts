@@ -20,6 +20,13 @@ const projectsData = [
     imgSrc: '/static/images/projects/Blockchain.png',
     href: 'https://github.com/reubence/nft-minting-live',
   },
+  {
+    title: 'Blockchain',
+    description:
+      'A single page website that mints NFTs for the user on the largest marketplace (OpenSea) and is fully responsive. Built using Next.js, Framer-Motion and Supabase.',
+    imgSrc: '/static/images/projects/Blockchain.png',
+    href: 'https://github.com/reubence/nft-minting-live',
+  },
 ]
 
 export default projectsData

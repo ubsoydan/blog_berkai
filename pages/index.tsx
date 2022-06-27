@@ -96,7 +96,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               <Link
                 href={`/blog/${slug}`}
                 key={slug}
-                className="group relative w-full transform transition-all hover:scale-[1.05] md:w-1/3"
+                className="group relative w-full transform transition-all duration-500 hover:scale-[1.05] hover:duration-500 md:w-1/3"
               >
                 <div
                   className={

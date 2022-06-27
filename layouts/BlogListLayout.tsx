@@ -81,15 +81,15 @@ export default function BlogListLayout({
               <Link
                 href={`/blog/${slug}`}
                 key={slug}
-                className="group transform transition-all hover:scale-[1.05]"
+                className="group transform transition-all duration-500 hover:scale-[1.05] hover:duration-500"
               >
                 <div
                   className={
-                    `absolute -inset-[2.4px] rounded-2xl bg-background-color transition group-hover:bg-gradient-to-r group-hover:blur-md group-hover:duration-500 dark:bg-white` +
+                    `absolute -inset-[2.4px] rounded-2xl bg-gray-100 transition duration-1000 group-hover:bg-gradient-to-r group-hover:blur-md group-hover:duration-500 dark:bg-gray-800` +
                     gradients[index]
                   }
                 ></div>
-                <article className="relative h-full w-full rounded-xl bg-background-color">
+                <article className="relative h-full w-full rounded-xl">
                   <div className="flex h-full w-full flex-col justify-between rounded-xl bg-white p-5 dark:bg-background-color">
                     <div className="flex flex-col justify-between space-y-5 md:flex-row xl:col-span-3">
                       <div className="space-y-6">

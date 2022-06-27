@@ -29,7 +29,7 @@ export default function SnippetsLayout({
 
   return (
     <>
-      <div className="divide-y px-2 sm:px-0">
+      <div className="mt-6 divide-y px-2 sm:px-0">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
@@ -58,7 +58,7 @@ export default function SnippetsLayout({
             </svg>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 py-8 dark:border-gray-700 md:grid-cols-2 lg:grid-cols-3">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -66,7 +66,7 @@ export default function SnippetsLayout({
               <Link
                 key={slug}
                 href={`/snippets/${slug}`}
-                className="group bg-day dark:bg-night group relative z-50 flex transform cursor-pointer flex-wrap rounded-xl rounded border border-gray-200 bg-opacity-50 p-px py-px transition duration-500 hover:scale-105 dark:border-gray-700 dark:bg-opacity-50"
+                className="group bg-day dark:bg-night group relative z-50 flex transform cursor-pointer flex-wrap rounded-2xl border border-gray-200 bg-opacity-50 p-px py-px transition duration-500 hover:scale-105 dark:border-gray-700 dark:bg-opacity-50"
               >
                 <div className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 transform bg-primary-500 duration-300 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 h-full w-1 origin-bottom scale-y-0 transform bg-primary-500 duration-300 group-hover:scale-y-100" />
@@ -78,7 +78,7 @@ export default function SnippetsLayout({
                       <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link
                           href={`/snippets/${slug}`}
-                          className="text-gray-900 dark:text-gray-100"
+                          className="text-gray-900 group-hover:text-primary-500 dark:text-gray-100"
                         >
                           {title}
                         </Link>
