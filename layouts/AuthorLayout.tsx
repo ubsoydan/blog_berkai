@@ -65,7 +65,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                 url={d.url}
                 text1={d.text1}
                 text2={d.text2}
-                text3={d.text3}
               />
             ))}
           </div>
@@ -87,7 +86,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                 url={d.url}
                 text1={d.text1}
                 text2={d.text2}
-                text3={d.text3}
               />
             ))}
           </div>

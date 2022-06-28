@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 
-const Education = ({ title, company, location, range, url, text1, text2, text3 }) => {
+const Education = ({ title, company, location, range, url, text1, text2 }) => {
   return (
     <div className="my-3">
       <div className="flex flex-row text-xl">
