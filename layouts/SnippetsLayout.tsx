@@ -65,18 +65,18 @@ export default function SnippetsLayout({
             return (
               <Link href={`/snippets/${slug}`} key={slug}>
                 <a className="w-full" aria-label={title}>
-                  <div className="w-full transform border-b border-gray-200 py-3 transition-all hover:scale-[1.02] dark:border-gray-700">
+                  <div className="group w-full transform border-b border-gray-200 py-3 transition-all hover:scale-[1.02] dark:border-gray-700">
                     <div className="flex flex-col justify-between sm:flex-row sm:items-center">
                       <div className="flex items-center">
-                        <div className="mr-6 text-left text-gray-300 dark:text-gray-400">
+                        <div className="mr-6 text-left text-gray-400 group-hover:font-bold dark:text-gray-500">
                           {index}
                         </div>
-                        <h4 className="w-full text-base font-medium text-gray-800 dark:text-gray-100 sm:text-lg">
+                        <h4 className="w-full text-base font-medium text-background-color group-hover:font-bold dark:text-white sm:text-lg">
                           {title}
                         </h4>
                       </div>
                       <div className="mt-2 flex items-center justify-between  sm:mt-0">
-                        <p className="mr-2 ml-8 text-left text-sm text-gray-500 dark:text-gray-400 sm:ml-0 sm:text-right md:mb-0">
+                        <p className="mr-2 ml-8 text-left text-sm text-gray-400 group-hover:font-bold dark:text-gray-500 sm:ml-0 sm:text-right md:mb-0">
                           <time dateTime={date}>{formatDate(date)}</time>
                         </p>
                       </div>

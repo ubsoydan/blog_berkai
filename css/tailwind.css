@@ -27,7 +27,7 @@
 .link-underline {
   border-bottom-width: 0;
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(to right, #14b8a6, #9333ea);
+    linear-gradient(to right, #14b8a6, #14b8a6);
   background-size: 0 2px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -36,11 +36,11 @@
 
 .link-underline-black {
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(to right, #d946ef, #ec4899);
+    linear-gradient(to right, #14b8a6, #14b8a6);
 }
 
 .link-underline:hover {
-  background-size: 100% 2px;
+  background-size: 100% 3px;
   background-position: 0 100%;
 }
 
