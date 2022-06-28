@@ -85,10 +85,10 @@ export default function ProjectTabs() {
             id="features-title"
             className="text-3xl font-extrabold tracking-tight text-background-color dark:text-white sm:text-4xl md:text-6xl"
           >
-            Projects
+            Domains I have worked on in the past
           </h2>
           <p className="mt-6 text-lg tracking-tight text-background-color dark:text-white">
-            Well atleast some of them...
+            Things I have made in the past... Mostly for Startups and small businesses.
           </p>
         </div>
         <Tab.Group

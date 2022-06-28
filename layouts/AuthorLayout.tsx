@@ -6,6 +6,7 @@ import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Experience from '@/components/Experience'
 import experienceData from '@/data/experienceData'
 import Education from '@/components/Education'
+import educationData from '@/data/educationData'
 
 interface Props {
   children: ReactNode
@@ -76,7 +77,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             </h1>
           </div>
           <div className="max-w-none pt-8 pb-8 xl:col-span-2">
-            {experienceData.map((d) => (
+            {educationData.map((d) => (
               <Education
                 key={d.company}
                 title={d.title}

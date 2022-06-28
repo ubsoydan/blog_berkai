@@ -29,13 +29,13 @@ const Education = ({ title, company, location, range, url, text1, text2, text3 }
             </div>
             <div className="text-gray-500 dark:text-gray-400">{text2}</div>
           </div>
-          <div className="items-top flex flex-row">
+          {/* <div className="items-top flex flex-row">
             <div className="text-primary-color-500 dark:text-primary-color-dark-500 mr-2 text-lg">
               {' '}
               &#8227;
             </div>
             <div className="text-gray-500 dark:text-gray-400">{text3}</div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="justify-center text-center text-2xl font-medium text-gray-200  dark:text-gray-600">

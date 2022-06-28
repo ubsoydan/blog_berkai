@@ -71,7 +71,7 @@ export default function SnippetsLayout({
                         <div className="mr-6 text-left text-gray-400 group-hover:font-bold dark:text-gray-500">
                           {index}
                         </div>
-                        <h4 className="w-full text-base font-medium text-background-color group-hover:font-bold dark:text-white sm:text-lg">
+                        <h4 className="w-full text-base font-medium text-background-color group-hover:font-bold group-hover:text-primary-500 dark:text-white sm:text-lg">
                           {title}
                         </h4>
                       </div>

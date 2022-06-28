@@ -1,29 +1,44 @@
 const experienceData = [
   {
-    title: 'Data Engineering Intern',
-    company: 'Accenture',
-    location: 'Ahmedabad, India',
-    range: 'January 2022 - May 2022',
-    url: 'https://www.accenture.com/gr-en/about/consulting-index',
+    title: 'Co-Founder & CTO',
+    company: 'destro.ai',
+    location: 'Delhi, India',
+    range: 'Nov 2020 - Feb 2021',
+    url: 'https://destro.ai/',
     text1:
-      'Helped with the digital transformation of BOAT by working on their platform called ByteETL.',
-    text2:
-      'Built the encryption component for the platform using Scala and Spark which included 2 encoding functionalities : ENCRYPT and HASH.',
-    text3:
-      'Created JSON wrappers for the encryption components and automated and triggered the pipelines to run at specific intervals using CronJob.',
+      'destro.ai intends to democratize Artificial Intelligence & Data Analytics by providing tools to a normal person, with no background in coding, allowing  him/her to solve any problem through data science and AI.',
+    text2: `We built products and solutions with AI at it's core that help businesses automate and optimize business outcomes`,
   },
   {
-    title: 'Software Engineer Analytics',
-    company: 'HOPS Healthcare',
-    location: 'Ahmedabad, India',
-    range: 'March 2021 - June 2021',
-    url: 'https://hops.healthcare/',
+    title: 'Co-Founder & CTO',
+    company: 'Practitionr',
+    location: 'Delhi, India',
+    range: 'Nov 2020 - Feb 2021',
+    url: 'https://practitionr.com/',
     text1:
-      'Guided by Mr. Vivek Patel, to create a pipeline that extracts essential information from informal conversations.',
+      'Practitionr was born out of gratitude for the services rendered by wellness practitioners. It is a platform that provides them with all the resources they need to succeed at their business.',
     text2:
-      'Worked on creating a web app for their healthcare system for doctors to analyze and save reports.',
-    text3:
-      'Developed functions for automatically extracting important elements from reports using BioBERT and Regex.',
+      'We created an automated practice management portal called Prottl that provides a platform for independent practitioners to build a personal brand and manage their practice efficiently. ',
+  },
+  {
+    title: 'Data Scientist',
+    company: 'Neo Kumfurt Solutions',
+    location: 'Delhi, India',
+    range: 'Nov 2020 - Feb 2021',
+    url: 'https://hops.healthcare/',
+    text1: 'A leading pet-care pharmaceutical company operating across 3 countries.',
+    text2:
+      'My job included proposing solutions and strategies to address business challenges and providing foundation for data-driven decision making through various Predictive Modelling techniques.',
+  },
+  {
+    title: 'Data Scientist',
+    company: 'Jio Creative Labs',
+    location: 'Mumbai, India',
+    range: 'May 2020 - Nov 2020',
+    url: 'http://www.jiocreativelabs.com/',
+    text1: `Jio is India's largest network provider. I got to work with their creative arm under the brand Jio Creative Labs.`,
+    text2:
+      'I built complex ranking algorithms, a Jio Vault to access and store real-time Information at scale, performed Keyword extraction and Sentiment Analysis to dictate key business decisions. I also helped develop and deliver an Augmented Reality app built using Unity 3D.',
   },
 ]
 
