@@ -1,6 +1,6 @@
 const experienceData = [
   {
-    title: 'Co-Founder & CTO',
+    title: 'Technical Co-Founder',
     company: 'destro.ai',
     location: 'Delhi, India',
     range: 'Nov 2020 - Feb 2021',
@@ -10,7 +10,7 @@ const experienceData = [
     text2: `We built products and solutions with AI at it's core that help businesses automate and optimize business outcomes`,
   },
   {
-    title: 'Co-Founder & CTO',
+    title: 'Technical Co-Founder',
     company: 'Practitionr',
     location: 'Delhi, India',
     range: 'Nov 2020 - Feb 2021',
