@@ -3,17 +3,17 @@ const experienceData = [
     title: 'Technical Co-Founder',
     company: 'destro.ai',
     location: 'Delhi, India',
-    range: 'Nov 2020 - Feb 2021',
+    range: 'Jan 2021 - Apr 2022',
     url: 'https://destro.ai/',
     text1:
-      'destro.ai intends to democratize Artificial Intelligence & Data Analytics by providing tools to a normal person, with no background in coding, allowing  him/her to solve any problem through data science and AI.',
+      'destro.ai intended to democratize Artificial Intelligence & Data Analytics by providing tools to a normal person, with no background in coding, allowing  him/her to solve any problem through data science and AI.',
     text2: `We built products and solutions with AI at it's core that help businesses automate and optimize business outcomes`,
   },
   {
     title: 'Technical Co-Founder',
     company: 'Practitionr',
     location: 'Delhi, India',
-    range: 'Nov 2020 - Feb 2021',
+    range: 'May 2021 - Jan 2022',
     url: 'https://practitionr.com/',
     text1:
       'Practitionr was born out of gratitude for the services rendered by wellness practitioners. It is a platform that provides them with all the resources they need to succeed at their business.',
