@@ -29,7 +29,7 @@ export default function Footer() {
             </Link>
             <div>{` • `}</div>
             <Link
-              href="https://github.com/ubsoydan/blog_berkai"
+              href="https://github.com/reubence/reubence.com"
               className="hover:text-primary-500 hover:underline hover:underline-offset-4"
             >
               Clone Theme
