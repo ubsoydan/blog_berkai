@@ -27,7 +27,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <div className="divide divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
         <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-14 xl:grid-cols-5">
           <div className="col-span-3 justify-center space-y-5 align-middle">
-            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-40">
+            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-96">
               <span className="relative inline-block -rotate-6 text-primary-500">
                 <Link
                   href="https://twitter.com/uberkai"
@@ -38,8 +38,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               </span>
             </span>
             <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-background-color dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
-              Umut Berkay
-              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-14">
+              Umut Berkay {`\r\n`}
+              <span className="relative inset-y-8 ml-1 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-4">
                 ^
               </span>
               Soydan
